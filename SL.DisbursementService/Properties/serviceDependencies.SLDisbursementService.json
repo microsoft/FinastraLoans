@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "apis1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/SLDisbursementServiceapi/apis/SLDisbursementService",
-      "type": "apis.azure",
-      "apiEndpoint": "https://sldisbursementserviceapi.azure-api.net/SLDisbursementService"
-    }
-  }
-}
