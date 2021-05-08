@@ -1,0 +1,90 @@
+var DH;
+(function (DH) {
+    var Studentlending;
+    (function (Studentlending) {
+        var CRM;
+        (function (CRM) {
+            var FDABatch;
+            (function (FDABatch) {
+                function onChangesPreliminaryApprovalDone(executionContext) {
+                    /// <summary>
+                    /// Check If PreliminaryApprovalDone is set to Yes and there are any reject records
+                    /// </summary>
+                    /// <param name="executionContext" type="Xrm.ExecutionContext<any>"></param>
+                    var onChange = new FDABatchScript(executionContext);
+                    onChange.CheckIfPreliminaryApprovalIsDone();
+                }
+                FDABatch.onChangesPreliminaryApprovalDone = onChangesPreliminaryApprovalDone;
+                var FDABatchScript = /** @class */ (function () {
+                    function FDABatchScript(executionContext) {
+                        /// <summary>
+                        /// initiate form context object and the name of trigger
+                        /// </summary>
+                        /// <param name="executionContext" type="Xrm.ExecutionContext<any>"></param>
+                        this.ExecutionContext = executionContext;
+                        this.FdaBatchForm = executionContext.getFormContext();
+                    }
+                    FDABatchScript.prototype._setWarningForRejectWhenApprovalIsDone = function () {
+                        /// <summary>
+                        /// method to check if batch has reject records
+                        /// </summary>   
+                        var local = this;
+                        local.FdaBatchForm.ui.clearFormNotification("Warning_For_Reject");
+                        var val = new String(this.FdaBatchForm.getAttribute(this.ExecutionContext.getEventSource().getName()).getValue());
+                        var batchId = this.FdaBatchForm.data.entity.getId();
+                        ;
+                        //check if selection for sl_preapprovaldone is yes
+                        if (val.match('102690000') !== null) {
+                            var query = "?$select=sl_fundingtype,sl_amountofpayment&$filter=(_sl_batchid_value eq " + batchId + " and statuscode eq 102690001)&$orderby=sl_fundingtype%20desc";
+                            Xrm.WebApi.online.retrieveMultipleRecords("sl_fdapayment", query).then(function success(result) {
+                                if (result.entities.length > 0) {
+                                    var loanAmt = 0.00;
+                                    var grantAmt = 0.00;
+                                    var calAmt = 0.00;
+                                    var loanCount = 0;
+                                    var grantCount = 0;
+                                    var calCount = 0;
+                                    var payment = result.entities[0].sl_amountofpayment;
+                                    for (var index = 0; index < result.entities.length; index++) {
+                                        var payment = result.entities[index];
+                                        if (payment.sl_fundingtype == " 102690000") {
+                                            loanAmt += payment.sl_amountofpayment;
+                                            loanCount++;
+                                        }
+                                        else if (payment.sl_fundingtype == "102690001") {
+                                            grantAmt += payment.sl_amountofpayment;
+                                            grantCount++;
+                                        }
+                                        else if (payment.sl_fundingtype == "102690002") {
+                                            calAmt += payment.sl_amountofpayment;
+                                            calCount++;
+                                        }
+                                    }
+                                    var msg = "The following will be rejected, please confirm to continue: " + "\r\n\r\n";
+                                    if (loanCount > 0) {
+                                        msg += loanCount + " DL Payment(s) totaling $" + loanAmt + "\r\n";
+                                    }
+                                    if (grantCount > 0) {
+                                        msg += grantCount + " Grant Payment(s) totaling $" + grantAmt + "\r\n";
+                                    }
+                                    if (calCount > 0) {
+                                        msg += calCount + " CAL Payment(s) totaling $" + calAmt + "\r\n";
+                                    }
+                                    alert(msg);
+                                }
+                            }, function (error) {
+                                local.FdaBatchForm.ui.setFormNotification("Error occured while retrieving batch details " + error.message, "ERROR", "Warning_For_Reject");
+                            });
+                        }
+                    };
+                    FDABatchScript.prototype.CheckIfPreliminaryApprovalIsDone = function () {
+                        this._setWarningForRejectWhenApprovalIsDone();
+                    };
+                    return FDABatchScript;
+                }());
+                FDABatch.FDABatchScript = FDABatchScript;
+            })(FDABatch = CRM.FDABatch || (CRM.FDABatch = {}));
+        })(CRM = Studentlending.CRM || (Studentlending.CRM = {}));
+    })(Studentlending = DH.Studentlending || (DH.Studentlending = {}));
+})(DH || (DH = {}));
+//# sourceMappingURL=fdabatch_form.js.map

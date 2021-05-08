@@ -1,0 +1,181 @@
+<ImportExportXml version="9.2.21043.124" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>SLFederalDisbursementApproval</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="SLDisbursementApproval" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Upgrade of SLFederalDisbursementApproval" languagecode="1033" />
+    </Descriptions>
+    <Version>1.8.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>studentlending</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="Student Lending" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>sl</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>10269</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="sl_fdabatch" behavior="0" />
+      <RootComponent type="1" schemaName="sl_fdapayment" behavior="0" />
+      <RootComponent type="1" schemaName="sl_fdaprocessflow" behavior="0" />
+      <RootComponent type="9" schemaName="sl_approveorreject" behavior="0" />
+      <RootComponent type="9" schemaName="sl_deferalreasons" behavior="0" />
+      <RootComponent type="9" schemaName="sl_language" behavior="0" />
+      <RootComponent type="9" schemaName="sl_provinces" behavior="0" />
+      <RootComponent type="9" schemaName="sl_spsresponseoptionset" behavior="0" />
+      <RootComponent type="9" schemaName="sl_subbatchstatus" behavior="0" />
+      <RootComponent type="20" id="{adf91e7e-431d-eb11-a813-000d3af413df}" behavior="0" />
+      <RootComponent type="20" id="{b4508c0e-7e1f-eb11-a813-000d3af413df}" behavior="0" />
+      <RootComponent type="20" id="{d0b84f3d-491d-eb11-a813-000d3af413df}" behavior="0" />
+      <RootComponent type="20" id="{fda0a622-6f1f-eb11-a813-000d3af413df}" behavior="0" />
+      <RootComponent type="29" id="{1d8233c4-6f97-eb11-b1ac-000d3a09daf8}" behavior="0" />
+      <RootComponent type="29" id="{3734f9a0-da1e-eb11-a813-000d3af4b43c}" behavior="0" />
+      <RootComponent type="29" id="{56f0ff9b-e495-eb11-b1ac-000d3af41c0b}" behavior="0" />
+      <RootComponent type="29" id="{7c821ee5-b679-48f9-8676-574df8ca421b}" behavior="0" />
+      <RootComponent type="29" id="{98b4979f-8b97-eb11-b1ac-000d3af41c0b}" behavior="0" />
+      <RootComponent type="29" id="{a322c33f-35f6-4dd4-a94f-6df0f88500c5}" behavior="0" />
+      <RootComponent type="29" id="{cfe2ccdc-2329-eb11-a813-000d3af4b43c}" behavior="0" />
+      <RootComponent type="29" id="{d1ee5388-d492-eb11-b1ac-000d3a09df92}" behavior="0" />
+      <RootComponent type="29" id="{fd5fbe29-3025-eb11-a813-000d3af4b43c}" behavior="0" />
+      <RootComponent type="31" id="{dd1c9563-607a-eb11-a812-000d3af3a23d}" behavior="0" />
+      <RootComponent type="31" id="{ecbae604-607a-eb11-a812-000d3af3a23d}" behavior="0" />
+      <RootComponent type="60" id="{80f86fcb-7270-eb11-a812-000d3af42d4b}" behavior="0" />
+      <RootComponent type="60" id="{997cdebf-bd58-46ff-82c7-76fcc604e008}" behavior="0" />
+      <RootComponent type="60" id="{b408091e-b1c7-4547-a89d-c30be4b27415}" behavior="0" />
+      <RootComponent type="60" id="{fa4f8ab9-465a-4f84-be8b-e147a471710c}" behavior="0" />
+      <RootComponent type="61" schemaName="sl_/js/forms/script/fdabatch_form.js" behavior="0" />
+      <RootComponent type="61" schemaName="sl_/js/forms/script/fdabatch_formsave.js" behavior="0" />
+      <RootComponent type="62" schemaName="sl_FederalDisbursementApproval" behavior="0" />
+      <RootComponent type="70" id="{13db1883-4c1d-eb11-a813-000d3af4b43c}" behavior="0" />
+      <RootComponent type="70" id="{d865fcda-711f-eb11-a813-000d3af413df}" behavior="0" />
+      <RootComponent type="80" schemaName="sl_FederalDisbursementApproval" behavior="0" />
+      <RootComponent type="300" schemaName="sl_fdabatchapp_26b3a" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required key="0" type="66" schemaName="MscrmControls.Canvas.CanvasControl" displayName="MscrmControls.Canvas.CanvasControl" solution="BaseCustomControlsCore (9.0.2104.3005)" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Disbursement Batch" id="{fa4f8ab9-465a-4f84-be8b-e147a471710c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2104.3005)" />
+        <Dependent key="1" type="60" displayName="Information" parentDisplayName="Disbursement Batch" id="{fa4f8ab9-465a-4f84-be8b-e147a471710c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="2" type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2104.3005)" />
+        <Dependent key="3" type="60" displayName="Information" parentDisplayName="Disbursement Payment" id="{b408091e-b1c7-4547-a89d-c30be4b27415}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="connectionreference" displayName="sl_CDSCurrentEnvironment" solution="Active" id.connectionreferencelogicalname="sl_CDSCurrentEnvironment" />
+        <Dependent key="5" type="29" displayName="Disbursement Approval Batch - SPS Files Processing based on FAA33 Approval" id="{56f0ff9b-e495-eb11-b1ac-000d3af41c0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="connectionreference" displayName="sl_CDSGeneral" solution="Active" id.connectionreferencelogicalname="sl_CDSGeneral" />
+        <Dependent key="7" type="29" displayName="Generate Payment Requisition Number " id="{3734f9a0-da1e-eb11-a813-000d3af4b43c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="connectionreference" displayName="sl_CDSCurrentEnvironment" solution="Active" id.connectionreferencelogicalname="sl_CDSCurrentEnvironment" />
+        <Dependent key="7" type="29" displayName="Generate Payment Requisition Number " id="{3734f9a0-da1e-eb11-a813-000d3af4b43c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="connectionreference" displayName="sl_CDSCurrentEnvironment" solution="Active" id.connectionreferencelogicalname="sl_CDSCurrentEnvironment" />
+        <Dependent key="8" type="29" displayName="Defer Undefer sub-batches" id="{d1ee5388-d492-eb11-b1ac-000d3a09df92}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="connectionreference" displayName="sl_ADF" solution="Active" id.connectionreferencelogicalname="sl_ADF" />
+        <Dependent key="8" type="29" displayName="Defer Undefer sub-batches" id="{d1ee5388-d492-eb11-b1ac-000d3a09df92}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="connectionreference" displayName="sl_ADF" solution="Active" id.connectionreferencelogicalname="sl_ADF" />
+        <Dependent key="10" type="29" displayName="Disbursement Approval Batch - Preliminary Approval Done Actions" id="{1d8233c4-6f97-eb11-b1ac-000d3a09daf8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="connectionreference" displayName="sl_CDSCurrentEnvironment" solution="Active" id.connectionreferencelogicalname="sl_CDSCurrentEnvironment" />
+        <Dependent key="10" type="29" displayName="Disbursement Approval Batch - Preliminary Approval Done Actions" id="{1d8233c4-6f97-eb11-b1ac-000d3a09daf8}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="connectionreference" displayName="sl_CDSCurrentEnvironment" solution="Active" id.connectionreferencelogicalname="sl_CDSCurrentEnvironment" />
+        <Dependent key="11" type="29" displayName="Disbursement Approval Batch - Trigger ADF Pipeline after the SPS files are processed" id="{98b4979f-8b97-eb11-b1ac-000d3af41c0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="9" type="connectionreference" displayName="sl_ADF" solution="Active" id.connectionreferencelogicalname="sl_ADF" />
+        <Dependent key="11" type="29" displayName="Disbursement Approval Batch - Trigger ADF Pipeline after the SPS files are processed" id="{98b4979f-8b97-eb11-b1ac-000d3af41c0b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="connectionreference" displayName="sl_CDSGeneral" solution="Active" id.connectionreferencelogicalname="sl_CDSGeneral" />
+        <Dependent key="12" type="29" displayName="Disbursement Approval Batch - Get Batch Aggregate By Funding Type" id="{cfe2ccdc-2329-eb11-a813-000d3af4b43c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="connectionreference" displayName="sl_CDSCurrentEnvironment" solution="Active" id.connectionreferencelogicalname="sl_CDSCurrentEnvironment" />
+        <Dependent key="13" type="29" displayName="Disbursement Approval Batch- Preliminary Approval for Approved By and Approved On - Update" id="{fd5fbe29-3025-eb11-a813-000d3af4b43c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="14" type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent key="15" type="80" schemaName="sl_FederalDisbursementApproval" displayName="Disbursement Approval" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

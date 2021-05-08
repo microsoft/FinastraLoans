@@ -1,0 +1,90 @@
+var DH;
+(function (DH) {
+    var Studentlending;
+    (function (Studentlending) {
+        var CRM;
+        (function (CRM) {
+            var FDAbatch;
+            (function (FDAbatch) {
+                function onSaveForm(executionContext) {
+                    /// <summary>
+                    /// Force compute rollup field amount onSave form
+                    /// </summary>
+                    /// <param name="executionContext" type="Xrm.ExecutionContext<any>"></param>
+                    var onSave = new FDAbatchFormScript(executionContext);
+                    var entityName = "sl_fdabatchs";                 //for Dev
+
+                    var rollupField = "sl_adjustedtotal"; 
+                    onSave.CheckFDAmount_onSave(entityName, rollupField);
+                    rollupField = "sl_adjustedpaymentcount";
+                    onSave.CheckFDAmount_onSave(entityName, rollupField);
+
+                    rollupField = "sl_originaltotalamount";
+                    onSave.CheckFDAmount_onSave(entityName, rollupField);
+                    rollupField = "sl_paymentcountrollup";
+                    onSave.CheckFDAmount_onSave(entityName, rollupField);
+
+
+                }
+                FDAbatch.onSaveForm = onSaveForm;
+
+                var FDAbatchFormScript = /** @class */ (function () {
+                    //FormLabel: string;
+                    function FDAbatchFormScript(executionContext) {
+                        /// <summary>
+                        /// initiate form context object and the name of trigger
+                        /// </summary>
+                        /// <param name="executionContext" type="Xrm.ExecutionContext<any>"></param>
+                        this.ExecutionContext = executionContext;
+                        this.FDAbatchForm = executionContext.getFormContext();
+                    }
+
+                    FDAbatchFormScript.prototype.CheckFDAmount_onSave= function (entityName, rollupField) {
+                        try {
+                            var guidParent = this.FDAbatchForm.data.entity.getId();    //for parent rec
+                            this._calculateRollupField(entityName, guidParent, rollupField);
+                        }
+                        catch (err) {
+                            this.FDAbatchForm.ui.setFormNotification("script CheckFDAmount_onSave error: " + err.message, "ERROR", "fdabatch_onsave_error");
+                        }
+                    };
+
+                    FDAbatchFormScript.prototype._calculateRollupField = function (TargetEntitySetName, TargetRecordId, TargetRollupFieldName) {
+                        TargetRecordId = TargetRecordId.replace("{", "").replace("}", "");
+                        var uriWebAPI = this.FDAbatchForm.context.getClientUrl() + "/api/data/v9.1/" +
+                            "CalculateRollupField(Target=@p1,FieldName=@p2)?" +
+                            "@p1={'@odata.id':'" + TargetEntitySetName + "(" + TargetRecordId + ")'}&" +
+                            "@p2='" + TargetRollupFieldName + "'";
+                        var uriWebAPI_test = this.FDAbatchForm.context.getClientUrl() + "/api/data/v9.1/"
+                            + "WhoAmI";
+
+                        console.log("_calculateRollupField_uriWebAPI=" + uriWebAPI);
+                        debugger;
+                        var req = new XMLHttpRequest();
+                        req.open(this.method, this.url, true); //? Need this to initiate the request ORIGINAL
+                        req.setRequestHeader("OData-Version", "4.0");
+                        req.setRequestHeader("OData-MaxVersion", "4.0");
+                        req.open("GET", uriWebAPI, true);
+
+                        req.onreadystatechange = function () {
+                            if (this.readyState === 4) {
+                                req.onreadystatechange = null;
+                                if (this.status === 200) {
+                                    //var results = JSON.parse(this.response);
+                                    //Xrm.Utility.alertDialog("Rollup_Value =" + results.sl_totalpaymentamount);
+                                }
+                                else {
+                                    Xrm.Utility.alertDialog("Error in _calculateRollupField: " + this.status);
+                                }
+                            }
+                        };
+                        req.send(JSON.stringify({}));
+                    }
+
+                    return FDAbatchFormScript;
+                }());
+                FDAbatch.FDAbatchFormScript = FDAbatchFormScript;
+            })(FDAbatch = CRM.FDAbatch || (CRM.FDAbatch = {}));
+        })(CRM = Studentlending.CRM || (Studentlending.CRM = {}));
+    })(Studentlending = DH.Studentlending || (DH.Studentlending = {}));
+})(DH || (DH = {}));
