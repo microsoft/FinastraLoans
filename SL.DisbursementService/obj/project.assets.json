@@ -76,6 +76,9 @@
       "SL.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Swashbuckle.AspNetCore": "6.1.4"
+        },
         "compile": {
           "bin/placeholder/SL.Domain.dll": {}
         },

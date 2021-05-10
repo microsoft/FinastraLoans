@@ -1,0 +1,12 @@
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\bin\Debug\net5.0\SL.Domain.deps.json
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\bin\Debug\net5.0\SL.Domain.dll
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\bin\Debug\net5.0\ref\SL.Domain.dll
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\bin\Debug\net5.0\SL.Domain.pdb
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\obj\Debug\net5.0\SL.Domain.csproj.AssemblyReference.cache
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\obj\Debug\net5.0\SL.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\obj\Debug\net5.0\SL.Domain.AssemblyInfoInputs.cache
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\obj\Debug\net5.0\SL.Domain.AssemblyInfo.cs
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\obj\Debug\net5.0\SL.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\obj\Debug\net5.0\SL.Domain.dll
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\obj\Debug\net5.0\ref\SL.Domain.dll
+C:\Users\kartikka\Documents\GitHub\FinastraLoans\SL.Domain\obj\Debug\net5.0\SL.Domain.pdb

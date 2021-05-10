@@ -35,6 +35,9 @@ namespace SL.DisbursementService
             });
 
             services.AddScoped<IDisbursementBatchRepository, DisbursementBatchRepository >();
+            services.AddScoped<IDisbursementApprovalService, DisbursementApprovalService>();
+            services.AddScoped<IDisbursementPaymentRepository, DisbursementPaymentRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
