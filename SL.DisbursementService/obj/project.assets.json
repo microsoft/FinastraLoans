@@ -218,25 +218,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kartikka\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jugraham\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kartikka\\Documents\\GitHub\\FinastraLoans\\SL.DisbursementService\\SL.DisbursementService.csproj",
+      "projectUniqueName": "C:\\Users\\jugraham\\Source\\Repos\\FinastraLoans\\SL.DisbursementService\\SL.DisbursementService.csproj",
       "projectName": "SL.DisbursementService",
-      "projectPath": "C:\\Users\\kartikka\\Documents\\GitHub\\FinastraLoans\\SL.DisbursementService\\SL.DisbursementService.csproj",
-      "packagesPath": "C:\\Users\\kartikka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kartikka\\Documents\\GitHub\\FinastraLoans\\SL.DisbursementService\\obj\\",
+      "projectPath": "C:\\Users\\jugraham\\Source\\Repos\\FinastraLoans\\SL.DisbursementService\\SL.DisbursementService.csproj",
+      "packagesPath": "C:\\Users\\jugraham\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jugraham\\Source\\Repos\\FinastraLoans\\SL.DisbursementService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\kartikka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jugraham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -245,15 +246,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://msazure.pkgs.visualstudio.com/_packaging/CAP_ISVExp_Tools_Stable/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\kartikka\\Documents\\GitHub\\FinastraLoans\\SL.Domain\\SL.Domain.csproj": {
-              "projectPath": "C:\\Users\\kartikka\\Documents\\GitHub\\FinastraLoans\\SL.Domain\\SL.Domain.csproj"
+            "C:\\Users\\jugraham\\Source\\Repos\\FinastraLoans\\SL.Domain\\SL.Domain.csproj": {
+              "projectPath": "C:\\Users\\jugraham\\Source\\Repos\\FinastraLoans\\SL.Domain\\SL.Domain.csproj"
             }
           }
         }
